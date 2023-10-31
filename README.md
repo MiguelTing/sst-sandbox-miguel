@@ -1,0 +1,3 @@
+# :rocket: Sandbox app for STT
+This app follows the SST Getting Started Guide and modifies the lambda function code and infra stack to use HTTP POST commands instead of GET.
+The stack creates an S3 bucket and passes that to the lambda app as an ENV var. The app parses the POST body request(JSON) and attempts to convert it to CSV and store in S3 if the file does not exist. In case of error it returns an appropriate error message
